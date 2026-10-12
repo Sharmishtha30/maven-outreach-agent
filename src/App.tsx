@@ -4,6 +4,8 @@ import { useAuthActions } from "@convex-dev/auth/react";
 import { anyApi } from "convex/server";
 import seeds from "../shared/seeds.json";
 import learning from "../shared/ld-research.json";
+import buyers from "../shared/buyers.json";
+import { BuyerIntel } from "./BuyerIntel";
 import { LearningIntel } from "./LearningIntel";
 import { canDraft, type Message } from "../shared/rules";
 import { connectGmail, disconnectGmail, prepareGmail } from "./gmail";
@@ -89,7 +91,9 @@ export function App(props: Props = {}) {
     [filter, setFilter] = useState("All companies"),
     [selected, setSelected] = useState<number[]>([]),
     [active, setActive] = useState(seeds[0].id),
-    [tab, setTab] = useState<"learning" | "evidence" | "draft">("learning"),
+    [tab, setTab] = useState<"buyers" | "learning" | "evidence" | "draft">(
+      "learning",
+    ),
     [step, setStep] = useState(0),
     [notice, setNotice] = useState(""),
     [error, setError] = useState(""),
@@ -126,24 +130,32 @@ export function App(props: Props = {}) {
         .filter(
           (s) =>
             filter === "All companies" ||
-            (filter === "L&D team evidenced"
-              ? learning.some(
-                  (x) => x.seedId === s.id && x.teamStatus === "confirmed",
-                )
-              : filter === "Published learning amount"
-                ? learning.some((x) => x.seedId === s.id && x.publishedAmount)
-                : filter === "L&D not established"
+            (filter === "Buyer shortlist"
+              ? buyers.some((b) => b.seedId === s.id)
+              : filter === "Sourced learning leaders"
+                ? buyers.some(
+                    (b) => b.seedId === s.id && b.roleStatus === "supported",
+                  )
+                : filter === "L&D team evidenced"
                   ? learning.some(
-                      (x) =>
-                        x.seedId === s.id && x.teamStatus === "unconfirmed",
+                      (x) => x.seedId === s.id && x.teamStatus === "confirmed",
                     )
-                  : filter === "With a signal"
-                    ? !!s.signal_source
-                    : filter === "India-linked"
-                      ? s.market.includes("India")
-                      : props.records?.some(
-                          (r) => r.seedId === s.id && r.status === "ready",
-                        )),
+                  : filter === "Published learning amount"
+                    ? learning.some(
+                        (x) => x.seedId === s.id && x.publishedAmount,
+                      )
+                    : filter === "L&D not established"
+                      ? learning.some(
+                          (x) =>
+                            x.seedId === s.id && x.teamStatus === "unconfirmed",
+                        )
+                      : filter === "With a signal"
+                        ? !!s.signal_source
+                        : filter === "India-linked"
+                          ? s.market.includes("India")
+                          : props.records?.some(
+                              (r) => r.seedId === s.id && r.status === "ready",
+                            )),
         ),
     [search, filter, props.records],
   );
@@ -372,10 +384,22 @@ export function App(props: Props = {}) {
               <select
                 aria-label="Filter accounts"
                 value={filter}
-                onChange={(e) => setFilter(e.target.value)}
+                onChange={(e) => {
+                  setFilter(e.target.value);
+                  if (
+                    ["Buyer shortlist", "Sourced learning leaders"].includes(
+                      e.target.value,
+                    )
+                  ) {
+                    setTab("buyers");
+                    setActive(buyers[0].seedId);
+                  }
+                }}
               >
                 {[
                   "All companies",
+                  "Buyer shortlist",
+                  "Sourced learning leaders",
                   "L&D team evidenced",
                   "Published learning amount",
                   "L&D not established",
@@ -463,6 +487,12 @@ export function App(props: Props = {}) {
               </div>
               <Status status={record?.status ?? "pending"} />
             </div>
+            {tab === "buyers" && (
+              <p className="muted">
+                Original sponsor below; researched learning contact is in the
+                Buyer &amp; contact tab.
+              </p>
+            )}
             <div className="person">
               <span className="avatar">
                 {seed.name
@@ -482,6 +512,14 @@ export function App(props: Props = {}) {
               )}
             </div>
             <div className="tabs" role="tablist">
+              <button
+                role="tab"
+                aria-selected={tab === "buyers"}
+                className={tab === "buyers" ? "chosen" : ""}
+                onClick={() => setTab("buyers")}
+              >
+                Buyer &amp; contact
+              </button>
               <button
                 role="tab"
                 aria-selected={tab === "learning"}
@@ -508,7 +546,9 @@ export function App(props: Props = {}) {
               </button>
             </div>
             {record?.error && <p className="inline-error">{record.error}</p>}
-            {tab === "learning" ? (
+            {tab === "buyers" ? (
+              <BuyerIntel seedId={active} />
+            ) : tab === "learning" ? (
               <LearningIntel row={learning.find((x) => x.seedId === active)!} />
             ) : tab === "evidence" ? (
               <div className="evidence">

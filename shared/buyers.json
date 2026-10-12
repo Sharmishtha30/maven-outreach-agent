@@ -1,0 +1,262 @@
+[
+  {
+    "seedId": 9,
+    "name": "Courtney Schneider",
+    "role": "Senior Director, Talent Management and Development",
+    "roleStatus": "supported",
+    "priorityReason": "Named internal learning leader, transparent learning policy and a recent AI-fluency programme.",
+    "roleEvidence": "GitLab’s public Talent Development handbook names Courtney as the senior director of the team.",
+    "sources": [
+      {
+        "url": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/",
+        "label": "Role evidence",
+        "period": "Live handbook; checked 12 October 2026"
+      }
+    ],
+    "checkedAt": "2026-10-12",
+    "budgetAuthority": "Not confirmed: role evidence does not establish purchasing authority or approval limits.",
+    "nextStep": "Confirm who approves external team learning; the individual fund cannot be pooled for team training.",
+    "workEmail": null,
+    "emailStatus": "not_verified",
+    "emailProvider": null,
+    "emailVerifiedAt": null,
+    "emailNote": "Direct work email not established. No connected verification provider; no address guessed or marked deliverable.",
+    "publicTeamMailbox": {
+      "email": "learning@gitlab.com",
+      "source": "https://handbook.gitlab.com/handbook/people-group/learning-and-development/",
+      "note": "Officially published shared team inbox, not Courtney’s direct email. Deliverability not independently verified; not cleared for drafts."
+    }
+  },
+  {
+    "seedId": 22,
+    "name": "Brandon Clark",
+    "role": "Global Head of Talent Development",
+    "roleStatus": "supported",
+    "priorityReason": "Global skills remit includes India and JAPAC; published professional-learning allowance.",
+    "roleEvidence": "Adobe’s author biography describes his ownership of global skills and executive development, working with regional talent leads.",
+    "sources": [
+      {
+        "url": "https://blog.adobe.com/authors/brandon-clark",
+        "label": "Role evidence",
+        "period": "Undated company biography"
+      }
+    ],
+    "checkedAt": "2026-10-12",
+    "budgetAuthority": "Not confirmed: role evidence does not establish purchasing authority or approval limits.",
+    "nextStep": "Ask which regional learning lead owns external-course purchasing and whether a team pilot uses a separate budget.",
+    "workEmail": null,
+    "emailStatus": "not_verified",
+    "emailProvider": null,
+    "emailVerifiedAt": null,
+    "emailNote": "Direct work email not established. No connected verification provider; no address guessed or marked deliverable."
+  },
+  {
+    "seedId": 6,
+    "name": "Ben Putterman",
+    "role": "Vice President, Learning and Talent Development",
+    "roleStatus": "supported",
+    "priorityReason": "2026 company event connects his remit to AI fluency and workflow redesign.",
+    "roleEvidence": "HubSpot’s Reimagine 2026 agenda names Ben and describes his work on the company’s internal AI-learning journey.",
+    "sources": [
+      {
+        "url": "https://www.hubspot.com/reimagine-sg-agenda",
+        "label": "Role evidence",
+        "period": "Reimagine 2026 agenda"
+      }
+    ],
+    "checkedAt": "2026-10-12",
+    "budgetAuthority": "Not confirmed: role evidence does not establish purchasing authority or approval limits.",
+    "nextStep": "Confirm the team responsible for an internal AI-workflow pilot and its approval process.",
+    "workEmail": null,
+    "emailStatus": "not_verified",
+    "emailProvider": null,
+    "emailVerifiedAt": null,
+    "emailNote": "Direct work email not established. No connected verification provider; no address guessed or marked deliverable."
+  },
+  {
+    "seedId": 35,
+    "name": "Marci Paino",
+    "role": "Chief Learning Officer, Enterprise Learning & Growth",
+    "roleStatus": "supported",
+    "priorityReason": "Internal workforce learning leader with a documented AI-readiness focus and company training-spend evidence.",
+    "roleEvidence": "Cisco’s official biography identifies Marci as Chief Learning Officer for Enterprise Learning & Growth.",
+    "sources": [
+      {
+        "url": "https://blogs.cisco.com/author/mapaino",
+        "label": "Role evidence",
+        "period": "Undated company biography; July 2026 newsroom corroboration"
+      },
+      {
+        "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m07/building-a-people-first-ai-strategy.html",
+        "label": "July 2026 role corroboration",
+        "period": "1 July 2026"
+      }
+    ],
+    "checkedAt": "2026-10-12",
+    "budgetAuthority": "Not confirmed: role evidence does not establish purchasing authority or approval limits.",
+    "nextStep": "Confirm the internal learning purchasing owner. Cisco’s broader learning organisation also covers customers and partners.",
+    "workEmail": null,
+    "emailStatus": "not_verified",
+    "emailProvider": null,
+    "emailVerifiedAt": null,
+    "emailNote": "Direct work email not established. No connected verification provider; no address guessed or marked deliverable."
+  },
+  {
+    "seedId": 1,
+    "name": "Maya Amaro Rudan",
+    "role": "Senior Director, Global Talent Development",
+    "roleStatus": "supported",
+    "priorityReason": "India-linked manager academy provides a concrete programme to discuss.",
+    "roleEvidence": "Her own role announcement names Freshworks and the senior-director role. Recent profile posts describe her team designing the Ignite manager academy.",
+    "sources": [
+      {
+        "url": "https://www.linkedin.com/posts/mayarudan_im-happy-to-share-that-im-starting-a-new-activity-7348068662248947712-HxVa",
+        "label": "Role evidence",
+        "period": "Self-published role announcement; exact date not independently resolved"
+      },
+      {
+        "url": "https://www.linkedin.com/in/mayarudan",
+        "label": "Professional profile and programme posts",
+        "period": "Public profile checked 12 October 2026"
+      }
+    ],
+    "checkedAt": "2026-10-12",
+    "budgetAuthority": "Not confirmed: role evidence does not establish purchasing authority or approval limits.",
+    "nextStep": "Confirm current role and ownership of external learning partners; explore an uncovered need beyond the existing academy.",
+    "workEmail": null,
+    "emailStatus": "not_verified",
+    "emailProvider": null,
+    "emailVerifiedAt": null,
+    "emailNote": "Direct work email not established. No connected verification provider; no address guessed or marked deliverable."
+  },
+  {
+    "seedId": 45,
+    "name": "Pramod Panda",
+    "role": "Chief Learning Officer",
+    "roleStatus": "supported",
+    "priorityReason": "Company announced a hands-on agentic-AI learning rollout on 6 October 2026.",
+    "roleEvidence": "Tech Mahindra’s press release names Pramod as CLO in the context of its workforce learning rollout with Google Cloud.",
+    "sources": [
+      {
+        "url": "https://www.techmahindra.com/insights/press-releases/techm-expands-agentic-ai-readiness-google-cloud-gemini-enterprise/",
+        "label": "Role evidence",
+        "period": "6 October 2026"
+      }
+    ],
+    "checkedAt": "2026-10-12",
+    "budgetAuthority": "Not confirmed: role evidence does not establish purchasing authority or approval limits.",
+    "nextStep": "Identify skill gaps beyond the existing Google Cloud programme and confirm authority to buy external courses.",
+    "workEmail": null,
+    "emailStatus": "not_verified",
+    "emailProvider": null,
+    "emailVerifiedAt": null,
+    "emailNote": "Direct work email not established. No connected verification provider; no address guessed or marked deliverable."
+  },
+  {
+    "seedId": 46,
+    "name": "Manoj Apte",
+    "role": "Global Head, Learning and Development",
+    "roleStatus": "supported",
+    "priorityReason": "India-based enterprise with a named learning head and published training investment.",
+    "roleEvidence": "A 2025 Everest Group assessment hosted by Persistent names Manoj among its key talent leaders. Evidence is dated, so current tenure needs reconfirmation.",
+    "sources": [
+      {
+        "url": "https://www.persistent.com/wp-content/uploads/2025/07/leader-in-everest-group-next%E2%80%91gen-application-services-talent-readiness-assessment-2025.pdf",
+        "label": "Role evidence",
+        "period": "2025 report; indexed source excerpt"
+      }
+    ],
+    "checkedAt": "2026-10-12",
+    "budgetAuthority": "Not confirmed: role evidence does not establish purchasing authority or approval limits.",
+    "nextStep": "Reconfirm current tenure, then ask which external learning gaps Persistent University does not already cover.",
+    "workEmail": null,
+    "emailStatus": "not_verified",
+    "emailProvider": null,
+    "emailVerifiedAt": null,
+    "emailNote": "Direct work email not established. No connected verification provider; no address guessed or marked deliverable."
+  },
+  {
+    "seedId": 5,
+    "name": "Josh Citron",
+    "role": "Head of Learning & Talent Development (directory-listed)",
+    "roleStatus": "provisional",
+    "priorityReason": "APAC presence and an active company-wide AI-enablement agenda.",
+    "roleEvidence": "A third-party directory lists this title as of October 2025. His public profile associates him with Atlassian but does not independently expose that exact current title.",
+    "sources": [
+      {
+        "url": "https://wiza.co/d/atlassian/deff/josh-citron",
+        "label": "Role evidence",
+        "period": "29 October 2025 directory entry"
+      },
+      {
+        "url": "https://www.linkedin.com/in/joshcitron",
+        "label": "Professional profile",
+        "period": "Checked 12 October 2026"
+      }
+    ],
+    "checkedAt": "2026-10-12",
+    "budgetAuthority": "Not confirmed: role evidence does not establish purchasing authority or approval limits.",
+    "nextStep": "Confirm current title and purchasing scope before requesting email enrichment.",
+    "workEmail": null,
+    "emailStatus": "not_verified",
+    "emailProvider": null,
+    "emailVerifiedAt": null,
+    "emailNote": "Direct work email not established. No connected verification provider; no address guessed or marked deliverable."
+  },
+  {
+    "seedId": 51,
+    "name": "Lilian De Munno",
+    "role": "Global Head of Talent Development (conflicting evidence)",
+    "roleStatus": "hold",
+    "priorityReason": "Published learning allowance and substantial internal learning programmes.",
+    "roleEvidence": "A careers page names Lilian as global talent-development head, but a separate company profile marks her Alumni. Do not treat this as a current buyer.",
+    "sources": [
+      {
+        "url": "https://www.thoughtworks.com/en-au/careers/learning-and-development",
+        "label": "Role evidence",
+        "period": "Undated careers page"
+      },
+      {
+        "url": "https://www.thoughtworks.com/en-sg/profiles/l/lilian-de-munno",
+        "label": "Conflicting company profile: Alumni",
+        "period": "Undated"
+      }
+    ],
+    "checkedAt": "2026-10-12",
+    "budgetAuthority": "Not confirmed: role evidence does not establish purchasing authority or approval limits.",
+    "nextStep": "Resolve the conflicting employer pages and identify the current successor before enrichment.",
+    "workEmail": null,
+    "emailStatus": "not_verified",
+    "emailProvider": null,
+    "emailVerifiedAt": null,
+    "emailNote": "Direct work email not established. No connected verification provider; no address guessed or marked deliverable."
+  },
+  {
+    "seedId": 39,
+    "name": "Rajiv Chandran",
+    "role": "Former or stale-listed Chief Learning Officer — on hold",
+    "roleStatus": "hold",
+    "priorityReason": "Large historical learning investment; current internal purchasing owner still unresolved.",
+    "roleEvidence": "An industry biography lists him at Accenture, while a newer directory says he moved to Egon Zehnder in October 2024. Exclude him from active outreach until resolved.",
+    "sources": [
+      {
+        "url": "https://www.td.org/p/rajiv-chandran",
+        "label": "Role evidence",
+        "period": "Undated industry biography"
+      },
+      {
+        "url": "https://www.signalhire.com/profiles/rajiv-chandran%27s-email/175113085",
+        "label": "Conflicting employment history",
+        "period": "Directory updated 8 September 2026"
+      }
+    ],
+    "checkedAt": "2026-10-12",
+    "budgetAuthority": "Not confirmed: role evidence does not establish purchasing authority or approval limits.",
+    "nextStep": "Find the current internal workforce-learning owner. LearnVantage leaders sell learning services and are not automatically internal budget owners.",
+    "workEmail": null,
+    "emailStatus": "not_verified",
+    "emailProvider": null,
+    "emailVerifiedAt": null,
+    "emailNote": "Direct work email not established. No connected verification provider; no address guessed or marked deliverable."
+  }
+]

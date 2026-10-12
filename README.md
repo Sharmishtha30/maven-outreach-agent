@@ -127,3 +127,5 @@ Each signed-in user's leads, research threads, email verification results, edite
 ## L&D and budget evidence
 
 The **L&D & budget** tab covers all 100 accounts with source links, dates and scope. Filters find 28 accounts with team/function evidence, 12 with published learning amounts, and 3 where L&D was not established. The remaining 69 show learning programmes without department evidence. Published spending and allowances are not current purchasing budgets. See [research methodology](docs/learning-research.md) and [account data](shared/ld-research.json).
+
+The **Buyer & contact** tab adds a 10-account shortlist with seven sourced learning leaders, one provisional contact and two held for conflicting employment evidence. Spending authority remains unconfirmed. No direct buyer emails have been verified; provider setup is still needed. Use the **Buyer shortlist** filter to review sources and next steps. These contacts do not replace existing sponsor draft recipients.

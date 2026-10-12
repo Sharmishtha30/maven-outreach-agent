@@ -18,6 +18,8 @@ Start with the requested company batch, at most ten per run. The 100 entries in 
 
 The repository’s `shared/ld-research.json` provides dated department and money evidence. When installed alone, retrieve it from the repository if needed. Distinguish programme evidence from a named department, and employee allowances from historical spending and current purchasing budgets. Preserve currency, geography, period and restrictions. Never infer available budget from these figures or use them to bypass fresh contact and source checks.
 
+For the researched buyer shortlist, read `shared/buyers.json` when available. `supported` means role evidence, not verified purchasing authority or email. Provisional and conflicting-role records remain on hold. A published team mailbox is not a verified individual address. Buyer records are separate from seed sponsors: never copy a sponsor’s verification onto a different person or silently reuse sponsor-addressed drafts. Promote a buyer only after checking current role and recording fresh provider verification for that exact individual and corporate address.
+
 ## Write and create drafts
 
 Produce three distinct messages: a fact-based opening, a useful follow-up and a close. Each must stay under 130 words, with a subject under 150 characters, one question and the operator's actual name. Use plain words, cite the supporting source in the review record, and personalize only from verified evidence. Reject line breaks in recipient addresses or subjects. Offer a conversation about one team's real work, not a broad training pitch. Do not invent Maven prices, results, availability, customers or sender affiliations. The operator must be authorized to represent the stated offer.
