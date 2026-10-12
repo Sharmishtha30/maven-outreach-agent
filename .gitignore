@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env*
+!.env.example
+.convex/
+.auth-keys.json
+test-results/
+playwright-report/
+*.log
+convex/_generated/

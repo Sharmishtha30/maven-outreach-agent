@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maven outreach"
+  short_description: "Research prospects and prepare reviewed Gmail drafts"
+  default_prompt: "Use $maven-outreach to research selected companies and prepare personalized Gmail drafts for review without sending."
