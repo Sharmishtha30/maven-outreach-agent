@@ -1,6 +1,6 @@
 # Operator setup
 
-The repository root README contains deployment and Google configuration steps. `convex/research.ts` is the agent runner; `shared/rules.ts` defines evidence and email gates; `convex/gmail.ts` is the draft-only adapter.
+The [repository setup guide](https://github.com/Sharmishtha30/maven-outreach-agent#setup) contains deployment and Google configuration steps. A copied skill does not include the web server or credentials. For assistant-only use, connect public-page research, a corporate-email finder/verifier and Gmail draft creation; if any capability is missing, report the gap and keep the affected contact on hold. `convex/research.ts` is the agent runner; `shared/rules.ts` defines evidence and email gates; `convex/gmail.ts` is the draft-only adapter.
 
 The web app uses Convex Auth for Google sign-in and a separate Google Identity Services consent step for Gmail. Sign-in and connected Gmail email must match. The Gmail access token is short-lived, kept in browser memory and passed to the draft action; it is not saved in the database or agent thread. The Google compose permission can also send email, but the adapter exposes only `drafts.create`.
 

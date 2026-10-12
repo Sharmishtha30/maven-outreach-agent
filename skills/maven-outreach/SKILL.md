@@ -5,7 +5,7 @@ description: Research Maven for Business target accounts, enrich and verify work
 
 # Maven outreach
 
-Use the web app in this repository or its authenticated Convex functions to move selected target accounts from evidence to reviewed Gmail drafts. The operator's Google account is the destination. Do not use the applicant's account for another operator.
+Use [the web app](https://tangible-wren-154.convex.site), a local checkout of [the repository](https://github.com/Sharmishtha30/maven-outreach-agent), or connected research and Gmail draft tools to move selected target accounts from evidence to reviewed Gmail drafts. If installed without the repository, use the operator's supplied company list or retrieve the public starting list from the repository; do not assume repository files exist locally. The operator's Google account is the destination. Do not use the applicant's account for another operator.
 
 Start with the requested company batch, at most ten per run. The 100 entries in `shared/seeds.json` are research starting points, not current verified contacts. Refresh source evidence before using them. For a new company, establish its official domain and public role source before extending the seed list; the current app deliberately accepts only that curated list.
 
@@ -18,9 +18,9 @@ Start with the requested company batch, at most ten per run. The 100 entries in 
 
 ## Write and create drafts
 
-Use `shared/rules.ts` as the runtime writing contract. Produce three distinct short messages: a fact-based opening, a useful follow-up and a close. Offer a conversation about one team's real work, not a broad training pitch. Do not invent Maven prices, results, availability, customers or sender affiliations. The operator must be authorized to represent the stated offer.
+Produce three distinct messages: a fact-based opening, a useful follow-up and a close. Each must stay under 130 words, with a subject under 150 characters, one question and the operator's actual name. Use plain words, cite the supporting source in the review record, and personalize only from verified evidence. Reject line breaks in recipient addresses or subjects. Offer a conversation about one team's real work, not a broad training pitch. Do not invent Maven prices, results, availability, customers or sender affiliations. The operator must be authorized to represent the stated offer.
 
-The operator reviews the evidence and messages, connects Gmail, and chooses **Create Gmail draft**. Reuse existing successful operations. If Gmail times out after submission, mark the operation uncertain and ask the operator to check Gmail; never blindly retry. The application does not send, schedule, update or delete Gmail messages.
+The operator reviews the evidence and messages, connects Gmail, and chooses **Create Gmail draft**. When using a connected assistant tool instead of the web app, confirm the destination mailbox and the operator's authorization to create drafts, and keep a local record of successful draft IDs to avoid duplicates. Reuse existing successful operations. If Gmail times out after submission, mark the operation uncertain and ask the operator to check Gmail; never blindly retry. The application does not send, schedule, update or delete Gmail messages.
 
 ## Setup and verification
 
