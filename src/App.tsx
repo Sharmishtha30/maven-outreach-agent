@@ -3,6 +3,8 @@ import { useAction, useConvexAuth, useMutation, useQuery } from "convex/react";
 import { useAuthActions } from "@convex-dev/auth/react";
 import { anyApi } from "convex/server";
 import seeds from "../shared/seeds.json";
+import learning from "../shared/ld-research.json";
+import { LearningIntel } from "./LearningIntel";
 import { canDraft, type Message } from "../shared/rules";
 import { connectGmail, disconnectGmail, prepareGmail } from "./gmail";
 type Seed = (typeof seeds)[number];
@@ -87,7 +89,7 @@ export function App(props: Props = {}) {
     [filter, setFilter] = useState("All companies"),
     [selected, setSelected] = useState<number[]>([]),
     [active, setActive] = useState(seeds[0].id),
-    [tab, setTab] = useState<"evidence" | "draft">("evidence"),
+    [tab, setTab] = useState<"learning" | "evidence" | "draft">("learning"),
     [step, setStep] = useState(0),
     [notice, setNotice] = useState(""),
     [error, setError] = useState(""),
@@ -124,13 +126,24 @@ export function App(props: Props = {}) {
         .filter(
           (s) =>
             filter === "All companies" ||
-            (filter === "With a signal"
-              ? !!s.signal_source
-              : filter === "India-linked"
-                ? s.market.includes("India")
-                : props.records?.some(
-                    (r) => r.seedId === s.id && r.status === "ready",
-                  )),
+            (filter === "L&D team evidenced"
+              ? learning.some(
+                  (x) => x.seedId === s.id && x.teamStatus === "confirmed",
+                )
+              : filter === "Published learning amount"
+                ? learning.some((x) => x.seedId === s.id && x.publishedAmount)
+                : filter === "L&D not established"
+                  ? learning.some(
+                      (x) =>
+                        x.seedId === s.id && x.teamStatus === "unconfirmed",
+                    )
+                  : filter === "With a signal"
+                    ? !!s.signal_source
+                    : filter === "India-linked"
+                      ? s.market.includes("India")
+                      : props.records?.some(
+                          (r) => r.seedId === s.id && r.status === "ready",
+                        )),
         ),
     [search, filter, props.records],
   );
@@ -363,6 +376,9 @@ export function App(props: Props = {}) {
               >
                 {[
                   "All companies",
+                  "L&D team evidenced",
+                  "Published learning amount",
+                  "L&D not established",
                   "With a signal",
                   "India-linked",
                   "Ready to review",
@@ -468,6 +484,14 @@ export function App(props: Props = {}) {
             <div className="tabs" role="tablist">
               <button
                 role="tab"
+                aria-selected={tab === "learning"}
+                className={tab === "learning" ? "chosen" : ""}
+                onClick={() => setTab("learning")}
+              >
+                L&D &amp; budget
+              </button>
+              <button
+                role="tab"
                 aria-selected={tab === "evidence"}
                 className={tab === "evidence" ? "chosen" : ""}
                 onClick={() => setTab("evidence")}
@@ -484,7 +508,9 @@ export function App(props: Props = {}) {
               </button>
             </div>
             {record?.error && <p className="inline-error">{record.error}</p>}
-            {tab === "evidence" ? (
+            {tab === "learning" ? (
+              <LearningIntel row={learning.find((x) => x.seedId === active)!} />
+            ) : tab === "evidence" ? (
               <div className="evidence">
                 <div className="evidence-block">
                   <div className="section-label">Why this company</div>

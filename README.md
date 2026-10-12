@@ -123,3 +123,7 @@ Each signed-in user's leads, research threads, email verification results, edite
 ## Official integration references
 
 [Gmail drafts](https://developers.google.com/workspace/gmail/api/guides/drafts) · [Gmail scopes](https://developers.google.com/workspace/gmail/api/auth/scopes) · [Google browser token flow](https://developers.google.com/identity/oauth2/web/guides/use-token-model) · [Convex Google auth](https://labs.convex.dev/auth/config/oauth/google) · [Hunter API](https://hunter.io/api-documentation/v2)
+
+## L&D and budget evidence
+
+The **L&D & budget** tab covers all 100 accounts with source links, dates and scope. Filters find 28 accounts with team/function evidence, 12 with published learning amounts, and 3 where L&D was not established. The remaining 69 show learning programmes without department evidence. Published spending and allowances are not current purchasing budgets. See [research methodology](docs/learning-research.md) and [account data](shared/ld-research.json).

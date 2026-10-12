@@ -963,3 +963,18 @@ footer {
     scroll-behavior: auto !important;
   }
 }
+
+.research-summary {
+  padding: 12px 15px;
+  background: #f3effc;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #514074;
+}
+.learning-intel p {
+  line-height: 1.65;
+}
+.tabs {
+  flex-wrap: wrap;
+}
